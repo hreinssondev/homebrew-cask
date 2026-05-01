@@ -1,6 +1,6 @@
 cask "brewstation" do
   version "1.4"
-  sha256 "7f31a0c5c45cdb5252f508a4e4439a49eeace4d4e62bea291cca093b83a0268b"
+  sha256 "738691b9b9b170b38d0c074e891c7f92a536821bfdcc72337995a3d61a143287"
 
   url "https://github.com/hreinssondev/brewstation/releases/download/#{version}/Brewstation.dmg"
   name "BrewStation"
@@ -13,7 +13,7 @@ cask "brewstation" do
 
   zap trash: [
     "~/Library/Application Support/BrewStation",
-    "~/Library/Preferences/com.hreinssondev.brewstation.plist",
     "~/Library/Caches/BrewStation",
+    "~/Library/Preferences/com.hreinssondev.brewstation.plist",
   ]
 end
